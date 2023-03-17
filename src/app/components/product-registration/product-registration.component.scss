@@ -1,0 +1,138 @@
+.background {
+  padding-top: 30px;
+  background-color: #025596;
+  height: 100%; 
+}
+
+.top.containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.bottom container {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container-center h1 {
+  text-align: center; 
+}
+
+.username-container {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-style: bold;
+  padding-top: 15px;
+}
+
+.product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.product-list li:last-of-type {
+  margin-bottom: 0;
+}
+
+.product-list .product-name {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+
+.product-list .product-quantity {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.product-list .product-price {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #c62828;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #c62828;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #666666;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #c62828;
+}
+ 
+
+  @media (min-width: 768px) {
+  .container {
+  width: 100%;
+  margin: 10px;
+  }
+
+
+  .container:nth-of-type(3) {
+  margin-top: 20px;
+  }
+  .background {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  }
+  
+
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1;
+    margin: 0 5px;
+  }
+}

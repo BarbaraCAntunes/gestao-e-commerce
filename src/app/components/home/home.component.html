@@ -1,0 +1,56 @@
+<div class="background">
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="mb-3 text-white">Lista de Produtos</h2>
+        </div>
+        <div class="col-4">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Pesquisar um produto"
+              aria-label="Pesquisar"
+              [(ngModel)]="searchTerm"
+              name="search"
+            />
+            <button
+              class="btn btn-outline-light"
+              type="button"
+              (click)="searchProduct()"
+            >
+              Buscar
+            </button>
+            <button
+              class="btn btn-outline-light"
+              type="button"
+              (click)="clearSearch()"
+            >
+              Limpar
+            </button>
+          </form>
+        </div>
+      </div>
+      <table class="table table-bordered table-hover table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>QUANTIDADE</th>
+            <th>PREÇO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

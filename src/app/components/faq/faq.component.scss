@@ -1,0 +1,112 @@
+.background {
+  background-color: #025596;
+}
+    
+    .container {
+      padding-top: 100px;
+      padding-bottom: 30px;
+      background-color: #025596;
+    }
+    
+  
+  
+    .mb-4 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .card-header {
+      background-color: #f8f9fa;
+      border: none;
+      border-radius: 10px 10px 0 0;
+      padding: 0.75rem 1.25rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .card-header:hover {
+      background-color: #f2d9db;
+    }
+
+    .card-header button {
+      font-size: 18px;
+      color: #343a40;
+      text-align: left;
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+
+
+    .card-body {
+      font-size: 18px;
+      color: #6c757d;
+      border-radius: 0 0 10px 10px;
+      padding: 1.25rem;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .row {
+margin-top: 30px;
+}
+    .form-control {
+      border-radius: 0;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #f2f2f2;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-bottom: 2px solid #f2f2f2;
+    }
+
+    .btn-primary {
+      border-radius: 0;
+      background-color: #025596;
+      border-color: #025596;
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+    }
+
+    .btn-primary:hover {
+      background-color: blue;
+      border-color: blue;
+    }
+
+    .contact-form {
+      margin-top: 50px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .card-header button {
+        font-size: 16px;
+      } 
+      .card-body {
+        font-size: 14px;
+      }
+    }
